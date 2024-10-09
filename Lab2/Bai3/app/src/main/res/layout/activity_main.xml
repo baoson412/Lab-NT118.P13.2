@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý nhân viên"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:background="#60A60E" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TextView và EditText nhập mã nhân viên -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã NV:" />
+        <EditText
+            android:id="@+id/editTextMaNV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nhập mã NV"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TextView và EditText nhập tên nhân viên -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên NV:" />
+        <EditText
+            android:id="@+id/editTextTenNV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nhập tên NV"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- TextView chọn loại nhân viên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại NV:" />
+
+    <!-- RadioGroup chứa 2 RadioButton cho loại nhân viên -->
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radioGroupLoaiNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonChinhThuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chính thức" />
+
+        <RadioButton
+            android:id="@+id/radioButtonThoiVu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời vụ" />
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <!-- Button nhập nhân viên -->
+    <Button
+        android:id="@+id/buttonNhapNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập NV"
+        android:textColor="@color/black"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/txtShow"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#1F8E23"/>
+
+    <!-- ListView hiển thị danh sách nhân viên -->
+    <ListView
+        android:id="@+id/listViewNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

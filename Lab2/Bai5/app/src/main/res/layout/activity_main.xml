@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TextView và EditText nhập dish name -->
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"/>
+
+        <EditText
+        android:id="@+id/editTextDishName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter dish name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thumbnail"/>
+
+        <!-- Spinner to select thumbnail -->
+        <Spinner
+            android:id="@+id/spinnerThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promotion"/>
+
+        <!-- Checkbox for promotion -->
+        <CheckBox
+            android:id="@+id/checkboxPromotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Button to add a new dish -->
+    <Button
+        android:id="@+id/buttonAddDish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD A NEW DISH"
+        android:textColor="@color/black"
+        android:backgroundTint="#CECECE"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <!-- GridView to display the list of dishes -->
+    <GridView
+        android:id="@+id/gridViewDishes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="16dp"
+        android:horizontalSpacing="16dp" />
+</LinearLayout>

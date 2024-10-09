@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TextView và EditText nhập ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID:" />
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter ID"
+            android:layout_marginLeft="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TextView và EditText nhập Fullname -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fullname:" />
+        <EditText
+            android:id="@+id/editTextFullname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Fullname"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- CheckBox chọn Manager -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is a manager:" />
+    <CheckBox
+        android:id="@+id/checkBoxManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- Button để thêm nhân viên -->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@android:color/darker_gray"/>
+
+    <!-- ListView hiển thị danh sách nhân viên -->
+    <ListView
+        android:id="@+id/listViewEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
